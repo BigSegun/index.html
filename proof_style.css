@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white: hsl(0, 0%, 100%);
+    --kill: blue; 
+    --box-background:rgb(224, 140, 224);
+    --verified:rgb(149, 52, 73);
+}
+body{
+    max-width: 800px;
+    margin:30px auto;
+}
+/* firt division */
+.review{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
+}
+ span{
+    display: block;
+    background-color: var(--box-background);
+    margin: 10px;
+    padding: 10px 40px 10px 10px;
+    border-radius: 5px;
+}
+.firstpic{
+    background-color: purple;
+}
+.secondpic{
+    background-color: purple;
+    margin-left: 20px;
+    position: relative;
+    bottom: -20px;
+}
+.thirdpic{
+    background-color: purple;
+    margin-left: 20px;
+    position: relative;
+    bottom: -40px;
+}
+img{
+    border-radius: 50px;
+}
+.body{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.detail{
+    width: 200px;
+    padding-bottom: 100px;
+}
+p{
+    padding-top: 20px;
+}
+h2{
+    color: var(--box-background);
+    font-size: 30px;
+    font-weight: 1000;
+    margin-bottom: 15px;
+}
+
+.two{
+  position: relative;
+  left: 15px;
+}
+.three {
+    position: relative;
+    left: 30px;
+}
+
+@media(max-width: 640px)
+.review{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.two{
+ position: unset;
+}
+.three{
+    position: unset;
+}
